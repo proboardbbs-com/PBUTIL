@@ -1,0 +1,14 @@
+## Makefile for PBUTIL v1.xx
+
+OBJS = pbutil.obj userpack.obj msgpack.obj fc.obj msgidx.obj nodelist.obj \
+       usersort.obj userkill.obj useridx.obj msgkill.obj msglink.obj \
+       msgrep.obj musplay.obj userfix.obj fidx.obj checkbl.obj jampack.obj \
+       maint.obj hatch.obj
+
+
+MODEL = LARGE
+
+TSLIB = 1
+PBLIB = 1
+
+pbutil.exe : $(OBJS)
